@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         />
       </div>
       <div className="mt-4 flex items-baseline justify-between gap-4">
-        <h3 className="font-display text-2xl text-ink">{project.name}</h3>
+        <h3 className="font-display font-light text-xl md:text-2xl text-ink">{project.name}</h3>
         <span className="font-sans text-xs uppercase tracking-wide text-ink/60 whitespace-nowrap">
           {project.status}
         </span>

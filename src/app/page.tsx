@@ -7,8 +7,8 @@ import ArrowLink from "@/components/ArrowLink";
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[100svh] w-full overflow-hidden pt-[72px] md:pt-[80px]">
+      {/* Hero image */}
+      <section className="relative h-[85svh] w-full overflow-hidden pt-[72px] md:pt-[80px]">
         <Image
           src="/images/COVER_IMAGE.jpg"
           alt="Borba Architecture"
@@ -17,8 +17,11 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-surface-dark/30" />
-        <div className="relative h-full flex flex-col items-start justify-end px-6 md:px-10 pb-10 md:pb-14 max-w-5xl">
+      </section>
+
+      {/* Hero text — below the image */}
+      <section className="px-6 md:px-10 pt-10 md:pt-14 pb-16 md:pb-20">
+        <div className="max-w-5xl">
           <h1 className="font-display font-light text-xl md:text-2xl leading-snug text-ink">
             Architecture earns its place.
           </h1>
@@ -32,7 +35,7 @@ export default function Home() {
       <section className="px-6 md:px-10 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between mb-12">
-            <h2 className="font-display font-light text-2xl md:text-3xl text-ink">
+            <h2 className="font-display font-light text-xl md:text-2xl text-ink">
               Selected Projects
             </h2>
             <ArrowLink href="/projects" className="text-ink hidden md:inline-flex">

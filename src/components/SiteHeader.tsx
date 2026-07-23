@@ -88,13 +88,15 @@ export default function SiteHeader() {
           aria-label="Main"
         >
           <div>
-            <Link
-              href="/projects"
-              className="font-sans text-xl md:text-2xl tracking-wide text-accent hover:text-ink-on-dark transition-colors"
-            >
-              Projects
-            </Link>
-            <ul className="space-y-1.5 mt-3">
+            <p className="font-sans text-xl md:text-2xl tracking-wide text-accent mb-3">
+              <Link
+                href="/projects"
+                className="hover:text-ink-on-dark transition-colors"
+              >
+                Projects
+              </Link>
+            </p>
+            <ul className="space-y-1.5">
               <li>
                 <Link
                   href="/projects"
@@ -141,13 +143,15 @@ export default function SiteHeader() {
           </div>
 
           <div>
-            <Link
-              href="/contact"
-              className="font-sans text-xl md:text-2xl tracking-wide text-accent hover:text-ink-on-dark transition-colors"
-            >
-              Connect
-            </Link>
-            <ul className="space-y-1.5 mt-3">
+            <p className="font-sans text-xl md:text-2xl tracking-wide text-accent mb-3">
+              <Link
+                href="/contact"
+                className="hover:text-ink-on-dark transition-colors"
+              >
+                Connect
+              </Link>
+            </p>
+            <ul className="space-y-1.5">
               <li>
                 <a
                   href="mailto:borbapereira@gmail.com"

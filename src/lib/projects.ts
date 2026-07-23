@@ -8,6 +8,7 @@ export type Project = {
   paragraphs: string[];
   facts: { label: string; value: string }[];
   heroImage: string;
+  images: string[];
   featured: boolean; // whether to show on homepage
 };
 
@@ -32,6 +33,11 @@ export const projects: Project[] = [
       { label: "Year", value: "2025–2026" },
     ],
     heroImage: "/images/RADCLIFFE_RENDER4.png",
+    images: [
+      "/images/RADCLIFFE_RENDER4.png",
+      "/images/RADCLIFFE_RENDER3.png",
+      "/images/RADCLIFFE_RENDER2.png",
+    ],
     featured: true,
   },
   {
@@ -54,6 +60,11 @@ export const projects: Project[] = [
       { label: "Year", value: "2024–2026" },
     ],
     heroImage: "/images/ADU_HERO.jpg",
+    images: [
+      "/images/ADU_HERO.jpg",
+      "/images/ADU_EXTERIOR.jpg",
+      "/images/ADU_INTERIOR.jpg",
+    ],
     featured: true,
   },
   {
@@ -76,6 +87,11 @@ export const projects: Project[] = [
       { label: "Year", value: "2014–2020" },
     ],
     heroImage: "/images/CAMPECHE_HERO.jpg",
+    images: [
+      "/images/CAMPECHE_HERO.jpg",
+      "/images/CAMPECHE_DRIVE.jpg",
+      "/images/CAMPECHE_INT.jpg",
+    ],
     featured: true,
   },
   {
@@ -98,6 +114,11 @@ export const projects: Project[] = [
       { label: "Year", value: "2019–2020" },
     ],
     heroImage: "/images/ITAIANDE_RENDER2.png",
+    images: [
+      "/images/ITAIANDE_RENDER2.png",
+      "/images/ITAIANDE_RENDER3.png",
+      "/images/ITAIANDE_SECTION.png",
+    ],
     featured: true,
   },
   {
@@ -120,6 +141,13 @@ export const projects: Project[] = [
       { label: "Year", value: "2019–2021" },
     ],
     heroImage: "/images/BRAGA_EXT.png",
+    images: [
+      "/images/BRAGA_HERO.png",
+      "/images/BRAGA_EXT.png",
+      "/images/BRAGA_INT.png",
+      "/images/BRAGA_SITEPLAN.png",
+      "/images/BRAGA_TYPFLOORPLAN.png",
+    ],
     featured: false,
   },
   {
@@ -142,6 +170,12 @@ export const projects: Project[] = [
       { label: "Year", value: "2024–2026" },
     ],
     heroImage: "/images/HOUSTON_EXT.png",
+    images: [
+      "/images/HOUSTON_EXT.png",
+      "/images/HOUSTON_INT.png",
+      "/images/HOUSTON_PLAN1.png",
+      "/images/HOUSTON_PLAN2.png",
+    ],
     featured: false,
   },
   {
@@ -164,6 +198,11 @@ export const projects: Project[] = [
       { label: "Year", value: "2021–2022" },
     ],
     heroImage: "/images/SANPEDRO_EXT3.png",
+    images: [
+      "/images/SANPEDRO_EXT3.png",
+      "/images/SANPEDRO_RENDER2.png",
+      "/images/SANPEDRO_PLAN1.png",
+    ],
     featured: false,
   },
   {
@@ -186,6 +225,13 @@ export const projects: Project[] = [
       { label: "Year", value: "2015–2016" },
     ],
     heroImage: "/images/ROCHDALE_AERIAL.png",
+    images: [
+      "/images/ROCHDALE_AERIAL.png",
+      "/images/ROCHDALE_SPORT.png",
+      "/images/ROCHDALE_SPORT2.png",
+      "/images/ROCHDALE_SPORT5.png",
+      "/images/ROCHDALE_PLAN3.png",
+    ],
     featured: false,
   },
 ];
