@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #EFF2E1;
+  --color-ink: #575449;
+  --color-surface-dark: #6B4339;
+  --color-ink-on-dark: #B8A99C;
+  --color-accent: #C17461;
+
+  /*
+    NOTE: This build environment cannot reach fonts.googleapis.com,
+    so next/font/google could not be used here. These fallback stacks
+    approximate Cormorant Garamond (display serif) and DM Sans (body
+    sans) using widely available system fonts.
+
+    To restore the exact specified typefaces once you deploy (e.g. to
+    Vercel, which has normal internet access), replace this file's
+    font declarations by re-adding next/font/google in
+    src/app/layout.tsx:
+
+      import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+
+      const cormorant = Cormorant_Garamond({
+        variable: "--font-cormorant",
+        subsets: ["latin"],
+        weight: ["300","400","500","600","700"],
+        style: ["normal","italic"],
+      });
+
+      const dmSans = DM_Sans({
+        variable: "--font-dm-sans",
+        subsets: ["latin"],
+        weight: ["400","500","700"],
+      });
+
+    ...and add their .variable classes to the <html> tag as before.
+  */
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
