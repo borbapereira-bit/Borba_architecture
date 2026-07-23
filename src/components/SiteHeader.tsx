@@ -43,7 +43,7 @@ export default function SiteHeader() {
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
         <Link
           href="/"
-          className="flex items-center gap-3 font-display text-3xl md:text-4xl tracking-wide text-ink-on-dark hover:text-accent transition-colors"
+          className="flex items-center gap-3 font-display font-light text-2xl md:text-3xl tracking-wide text-ink-on-dark hover:text-accent transition-colors"
         >
           <Image
             src="/images/borba-icon.png"
@@ -90,14 +90,14 @@ export default function SiteHeader() {
           <div>
             <Link
               href="/projects"
-              className="font-display text-3xl md:text-4xl text-ink-on-dark hover:text-accent transition-colors"
+              className="font-sans text-xl md:text-2xl tracking-wide text-accent hover:text-ink-on-dark transition-colors"
             >
               Projects
             </Link>
           </div>
 
           <div>
-            <p className="font-display text-3xl md:text-4xl text-ink-on-dark mb-3">
+            <p className="font-sans text-xl md:text-2xl tracking-wide text-accent mb-3">
               Practice
             </p>
             <ul className="space-y-1.5">
@@ -105,7 +105,7 @@ export default function SiteHeader() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-sans text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                    className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -117,7 +117,7 @@ export default function SiteHeader() {
           <div>
             <Link
               href="/contact"
-              className="font-display text-3xl md:text-4xl text-ink-on-dark hover:text-accent transition-colors"
+              className="font-sans text-xl md:text-2xl tracking-wide text-accent hover:text-ink-on-dark transition-colors"
             >
               Connect
             </Link>
