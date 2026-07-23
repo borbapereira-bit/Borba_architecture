@@ -35,8 +35,9 @@
 
     ...and add their .variable classes to the <html> tag as before.
   */
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-cormorant), Georgia, serif;
+--font-sans: var(--font-dm-sans), Helvetica, Arial, sans-serif;
+
 }
 
 html {
