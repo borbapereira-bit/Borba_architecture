@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -38,14 +39,21 @@ export default function SiteHeader() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="flex items-center justify-between px-6 md:px-10 py-5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-surface-dark">
+      <div className="flex items-center justify-between px-6 md:px-10 py-4">
         <Link
           href="/"
-          className="font-display text-2xl tracking-wide text-ink"
-          style={{ color: open ? "#C17461" : undefined }}
+          className="flex items-center gap-3 font-display text-3xl md:text-4xl tracking-wide text-ink-on-dark hover:text-accent transition-colors"
         >
-          Borba Architecture
+          <Image
+            src="/images/borba-icon.png"
+            alt=""
+            width={40}
+            height={40}
+            className="h-9 w-9 md:h-10 md:w-10"
+            priority
+          />
+          <span>Borba Architecture</span>
         </Link>
 
         <button
@@ -56,13 +64,13 @@ export default function SiteHeader() {
           className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5"
         >
           <span
-            className={`block h-px w-6 transition-transform duration-300 ${
-              open ? "translate-y-[3.5px] rotate-45 bg-ink-on-dark" : "bg-ink"
+            className={`block h-px w-6 bg-ink-on-dark transition-transform duration-300 ${
+              open ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`block h-px w-6 transition-transform duration-300 ${
-              open ? "-translate-y-[3.5px] -rotate-45 bg-ink-on-dark" : "bg-ink"
+            className={`block h-px w-6 bg-ink-on-dark transition-transform duration-300 ${
+              open ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
         </button>
@@ -80,27 +88,24 @@ export default function SiteHeader() {
           aria-label="Main"
         >
           <div>
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">
-              Projects
-            </p>
             <Link
               href="/projects"
-              className="font-display text-4xl md:text-5xl text-ink-on-dark hover:text-accent transition-colors"
+              className="font-display text-3xl md:text-4xl text-ink-on-dark hover:text-accent transition-colors"
             >
-              All Projects
+              Projects
             </Link>
           </div>
 
           <div>
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">
+            <p className="font-display text-3xl md:text-4xl text-ink-on-dark mb-3">
               Practice
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {practiceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-display text-4xl md:text-5xl text-ink-on-dark hover:text-accent transition-colors"
+                    className="font-sans text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -110,14 +115,11 @@ export default function SiteHeader() {
           </div>
 
           <div>
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">
-              Connect
-            </p>
             <Link
               href="/contact"
-              className="font-display text-4xl md:text-5xl text-ink-on-dark hover:text-accent transition-colors"
+              className="font-display text-3xl md:text-4xl text-ink-on-dark hover:text-accent transition-colors"
             >
-              Contact
+              Connect
             </Link>
           </div>
         </nav>

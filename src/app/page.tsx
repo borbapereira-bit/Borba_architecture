@@ -10,8 +10,8 @@ export default function Home() {
       {/* Hero */}
       <section className="relative h-[100svh] w-full overflow-hidden">
         <Image
-          src="/images/COVER_SKETCH.jpg"
-          alt="Architectural sketch, Borba Architecture"
+          src="/images/COVER_IMAGE.jpg"
+          alt="Borba Architecture"
           fill
           priority
           sizes="100vw"
