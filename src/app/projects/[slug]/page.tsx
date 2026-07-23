@@ -48,7 +48,7 @@ export default async function ProjectPage({
           <p className="font-sans text-xs tracking-[0.2em] uppercase text-ink-on-dark/90 mb-3">
             {project.statusLine}
           </p>
-          <h1 className="font-display text-4xl md:text-6xl text-ink-on-dark">
+          <h1 className="font-display font-light text-3xl md:text-4xl text-ink-on-dark">
             {project.name}
           </h1>
           <p className="font-sans text-base md:text-lg text-ink-on-dark/90 mt-2">

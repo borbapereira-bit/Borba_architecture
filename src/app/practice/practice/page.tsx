@@ -10,7 +10,7 @@ export default function PracticePage() {
   return (
     <div className="pt-32 md:pt-40 pb-24 px-6 md:px-10">
       <div className="mx-auto max-w-3xl">
-        <h1 className="font-display text-4xl md:text-5xl text-ink mb-10">
+        <h1 className="font-display font-light text-3xl md:text-4xl text-ink mb-10">
           The Practice
         </h1>
         <div className="space-y-6 font-sans text-base md:text-lg leading-relaxed text-ink/85">

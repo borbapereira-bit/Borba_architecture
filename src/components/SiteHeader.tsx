@@ -94,6 +94,32 @@ export default function SiteHeader() {
             >
               Projects
             </Link>
+            <ul className="space-y-1.5 mt-3">
+              <li>
+                <Link
+                  href="/projects"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  Single Family
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  Multi-Family
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  Urban Design
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -121,6 +147,34 @@ export default function SiteHeader() {
             >
               Connect
             </Link>
+            <ul className="space-y-1.5 mt-3">
+              <li>
+                <a
+                  href="mailto:borbapereira@gmail.com"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+13109574795"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  Phone
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/borbapereira/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-display font-light text-lg md:text-xl text-ink-on-dark/90 hover:text-accent transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>

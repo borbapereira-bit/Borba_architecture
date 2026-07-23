@@ -48,7 +48,7 @@ export default function ServicesPage() {
   return (
     <div className="pt-32 md:pt-40 pb-24 px-6 md:px-10">
       <div className="mx-auto max-w-6xl">
-        <h1 className="font-display text-4xl md:text-5xl text-ink mb-16">
+        <h1 className="font-display font-light text-3xl md:text-4xl text-ink mb-16">
           Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">

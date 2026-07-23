@@ -17,12 +17,12 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-surface-dark/20" />
+        <div className="absolute inset-0 bg-surface-dark/30" />
         <div className="relative h-full flex flex-col items-start justify-end px-6 md:px-10 pb-10 md:pb-14 max-w-5xl">
-          <h1 className="font-display font-light text-4xl md:text-6xl leading-[1.05] text-ink-on-dark">
+          <h1 className="font-display font-light text-xl md:text-2xl leading-snug text-ink">
             Architecture earns its place.
           </h1>
-          <p className="font-sans text-sm md:text-base mt-3 max-w-xl bg-bg/90 px-3 py-1.5 text-ink">
+          <p className="font-sans text-sm md:text-base mt-3 max-w-xl text-ink">
             Custom homes, housing, and thoughtful development support.
           </p>
         </div>

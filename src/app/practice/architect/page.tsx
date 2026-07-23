@@ -29,7 +29,7 @@ export default function ArchitectPage() {
         </div>
 
         <div className="md:col-span-2 space-y-8">
-          <h1 className="font-display text-4xl md:text-5xl text-ink">
+          <h1 className="font-display font-light text-3xl md:text-4xl text-ink">
             The Architect
           </h1>
 
