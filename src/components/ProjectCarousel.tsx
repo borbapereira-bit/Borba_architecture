@@ -22,7 +22,7 @@ export default function ProjectCarousel({
 
   return (
     <div className="relative w-full">
-      <div className="relative h-[60svh] md:h-[75svh] w-full overflow-hidden bg-surface-dark">
+      <div className="relative h-[60svh] md:h-[75svh] w-full overflow-hidden bg-bg">
         {images.map((src, i) => (
           <div
             key={src}
@@ -37,7 +37,7 @@ export default function ProjectCarousel({
               fill
               priority={i === 0}
               sizes="100vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         ))}
@@ -48,7 +48,7 @@ export default function ProjectCarousel({
               type="button"
               aria-label="Previous image"
               onClick={prev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center bg-surface-dark/60 text-ink-on-dark hover:bg-surface-dark/80 transition-colors"
+              className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center bg-surface-dark/70 text-ink-on-dark hover:bg-surface-dark/90 transition-colors"
             >
               ←
             </button>
@@ -56,7 +56,7 @@ export default function ProjectCarousel({
               type="button"
               aria-label="Next image"
               onClick={next}
-              className="absolute right-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center bg-surface-dark/60 text-ink-on-dark hover:bg-surface-dark/80 transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center bg-surface-dark/70 text-ink-on-dark hover:bg-surface-dark/90 transition-colors"
             >
               →
             </button>
@@ -69,7 +69,7 @@ export default function ProjectCarousel({
                   aria-label={`Go to image ${i + 1}`}
                   onClick={() => setIndex(i)}
                   className={`h-1.5 w-1.5 rounded-full transition-colors ${
-                    i === index ? "bg-accent" : "bg-ink-on-dark/50"
+                    i === index ? "bg-accent" : "bg-surface-dark/40"
                   }`}
                 />
               ))}

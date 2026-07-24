@@ -8,14 +8,15 @@ export default function Home() {
   return (
     <>
       {/* Hero image */}
-      <section className="relative h-[85svh] w-full overflow-hidden pt-[72px] md:pt-[80px]">
+      <section className="relative w-full overflow-hidden pt-[72px] md:pt-[80px] bg-bg">
         <Image
           src="/images/COVER_IMAGE.jpg"
           alt="Borba Architecture"
-          fill
+          width={3300}
+          height={2200}
           priority
           sizes="100vw"
-          className="object-cover"
+          className="w-full h-auto"
         />
       </section>
 

@@ -12,13 +12,14 @@ export default function ArchitectPage() {
     <div className="pt-32 md:pt-40 pb-24">
       <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
         <div className="md:col-span-1">
-          <div className="relative aspect-[4/5] w-full overflow-hidden">
+          <div className="relative w-full overflow-hidden bg-bg">
             <Image
               src="/images/PORTRAIT.png"
               alt="Jose Eduardo Borba Pereira, Architect"
-              fill
+              width={1122}
+              height={1122}
               sizes="(min-width: 768px) 33vw, 100vw"
-              className="object-cover"
+              className="w-full h-auto"
             />
           </div>
           <p className="font-sans text-sm text-ink/70 mt-4">

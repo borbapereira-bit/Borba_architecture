@@ -39,14 +39,14 @@ export default async function ProjectPage({
           images={project.images}
           alt={`${project.name}, ${project.location}`}
         />
-        <div className="absolute inset-x-0 bottom-0 px-6 md:px-10 pb-8 md:pb-12 pt-16 bg-gradient-to-t from-surface-dark/70 to-transparent pointer-events-none">
-          <p className="font-sans text-xs tracking-[0.2em] uppercase text-ink-on-dark/90 mb-2">
+        <div className="absolute inset-x-0 bottom-0 px-6 md:px-10 pb-8 md:pb-12 pt-16 bg-gradient-to-t from-bg/95 to-transparent pointer-events-none">
+          <p className="font-sans text-xs tracking-[0.2em] uppercase text-ink/70 mb-2">
             {project.statusLine}
           </p>
-          <h1 className="font-display font-light text-3xl md:text-4xl text-ink-on-dark">
+          <h1 className="font-display font-light text-xl md:text-2xl leading-snug text-ink">
             {project.name}
           </h1>
-          <p className="font-sans text-base md:text-lg text-ink-on-dark/90 mt-1">
+          <p className="font-sans text-sm md:text-base text-ink mt-1">
             {project.location}
           </p>
         </div>

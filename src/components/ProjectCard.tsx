@@ -5,13 +5,13 @@ import { Project } from "@/lib/projects";
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.slug}`} className="group block">
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface-dark/10">
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-bg border border-ink/10">
         <Image
           src={project.heroImage}
           alt={`${project.name}, ${project.location}`}
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+          className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
         />
       </div>
       <div className="mt-4 flex items-baseline justify-between gap-4">
