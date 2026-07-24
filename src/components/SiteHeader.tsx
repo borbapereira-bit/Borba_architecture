@@ -9,7 +9,6 @@ const practiceLinks = [
   { href: "/practice/architect", label: "The Architect" },
   { href: "/practice/practice", label: "The Practice" },
   { href: "/practice/services", label: "Services" },
-  { href: "/practice/process", label: "Process" },
 ];
 
 export default function SiteHeader() {
@@ -43,6 +42,7 @@ export default function SiteHeader() {
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
         <Link
           href="/"
+          onClick={() => setOpen(false)}
           className="flex items-center gap-3 font-display font-light text-2xl md:text-3xl tracking-wide text-ink-on-dark hover:text-accent transition-colors"
         >
           <Image
