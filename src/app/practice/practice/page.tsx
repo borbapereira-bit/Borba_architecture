@@ -54,18 +54,41 @@ export default function PracticePage() {
             Architecture becomes a response rather than an imposition.
           </p>
           <p>
-            Practicing on both the design and development sides of the
-            industry — as an architect and as a project manager overseeing
-            feasibility, permitting, consultant coordination, and
-            construction — has shaped this approach. Understanding how
-            buildings are realized allows good design to remain ambitious
-            while grounded in the realities of building.
-          </p>
-          <p>
             Guided by restraint, proportion, natural light, and honest
             materials, Borba Architecture creates buildings that feel
             rooted in their surroundings, generous to their occupants, and
             age well.
+          </p>
+          <p>
+            With more than 20 years of experience designing, permitting, and
+            guiding projects through construction, this practice understands
+            how to take an idea from its earliest stages to a completed
+            building. What has shaped that approach most is working on both
+            sides of the industry: alongside architectural work, years spent
+            managing projects for developers — overseeing feasibility
+            studies, permitting, consultant coordination, budgets, and
+            construction — changed the way architecture is approached here,
+            not only as design, but as a process that must be carefully
+            planned, coordinated, and built. Good architecture is measured
+            not only by its design, but by how thoughtfully it is built and
+            how wisely it uses a client's investment.
+          </p>
+          <p>
+            Every project at Borba Architecture begins by listening — to
+            the client, to the site, and to the opportunities each project
+            presents. Design develops through collaboration, with clear
+            communication and regular feedback at every stage. Clients are
+            involved throughout the process, ensuring that important
+            decisions are made together rather than in isolation.
+          </p>
+          <p>
+            The work also extends beyond the design phase. Borba Architecture
+            assists clients through permitting, contractor selection,
+            construction administration, and site observation to help ensure
+            that the project is built in accordance with the design intent.
+            Careful review of construction progress and payment applications
+            helps protect the client's investment while maintaining quality
+            throughout construction.
           </p>
         </div>
 

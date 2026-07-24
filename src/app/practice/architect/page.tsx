@@ -76,51 +76,6 @@ export default function ArchitectPage() {
           </div>
         </div>
       </div>
-
-      {/* The Borba Architecture Difference */}
-      <div className="mx-auto max-w-3xl px-6 md:px-10 mt-24 md:mt-32">
-        <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
-          The Borba Architecture Difference
-        </h2>
-        <div className="space-y-6 font-sans text-base md:text-lg leading-relaxed text-ink/85">
-          <p>
-            With more than 20 years of experience designing, permitting, and
-            guiding projects through construction, I understand how to take
-            an idea from its earliest stages to a completed building.
-          </p>
-          <p>
-            What has shaped my approach most, however, is working on both
-            sides of the industry. In addition to practicing architecture, I
-            have spent years managing projects for developers, overseeing
-            feasibility studies, permitting, consultant coordination,
-            budgets, and construction. That experience changed the way I
-            think about architecture — not only as design, but as a process
-            that must be carefully planned, coordinated, and built.
-          </p>
-          <p>
-            Good architecture is measured not only by its design, but by how
-            thoughtfully it is built and how wisely it uses a client's
-            investment.
-          </p>
-          <p>
-            At Borba Architecture, every project begins by listening — to
-            the client, to the site, and to the opportunities each project
-            presents. Design develops through collaboration, with clear
-            communication and regular feedback at every stage. Clients are
-            involved throughout the process, ensuring that important
-            decisions are made together rather than in isolation.
-          </p>
-          <p>
-            The work also extends beyond the design phase. Borba Architecture
-            assists clients through permitting, contractor selection,
-            construction administration, and site observation to help ensure
-            that the project is built in accordance with the design intent.
-            Careful review of construction progress and payment applications
-            helps protect the client's investment while maintaining quality
-            throughout construction.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

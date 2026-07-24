@@ -33,23 +33,25 @@ export default async function ProjectPage({
 
   return (
     <article>
-      {/* Carousel with name overlaid at bottom */}
-      <section className="relative pt-[72px] md:pt-[80px]">
+      {/* Carousel */}
+      <section className="pt-[72px] md:pt-[80px]">
         <ProjectCarousel
           images={project.images}
           alt={`${project.name}, ${project.location}`}
         />
-        <div className="absolute inset-x-0 bottom-0 px-6 md:px-10 pb-8 md:pb-12 pt-16 bg-gradient-to-t from-bg/95 to-transparent pointer-events-none">
-          <p className="font-sans text-xs tracking-[0.2em] uppercase text-ink/70 mb-2">
-            {project.statusLine}
-          </p>
-          <h1 className="font-display font-light text-xl md:text-2xl leading-snug text-ink">
-            {project.name}
-          </h1>
-          <p className="font-sans text-sm md:text-base text-ink mt-1">
-            {project.location}
-          </p>
-        </div>
+      </section>
+
+      {/* Name and status — below the carousel, not overlaid */}
+      <section className="px-6 md:px-10 pt-8 md:pt-10">
+        <p className="font-sans text-xs tracking-[0.2em] uppercase text-ink/70 mb-2">
+          {project.statusLine}
+        </p>
+        <h1 className="font-display font-light text-xl md:text-2xl leading-snug text-ink">
+          {project.name}
+        </h1>
+        <p className="font-sans text-sm md:text-base text-ink mt-1">
+          {project.location}
+        </p>
       </section>
 
       {/* Facts panel — separate space */}
